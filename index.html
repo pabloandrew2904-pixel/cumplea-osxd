@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Allyson ✨</title>
+    <meta name="description" content="Un regalo especial de cumpleaños para Allyson">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="page page-1 active" id="page1">
+        <div class="page-bg"></div>
+        <div class="glitch-overlay"></div>
+        <div class="content-wrapper">
+            <p class="hook-text glitch-text" id="hookText">
+                Página hecha por Pablo xd
+            </p>
+            <div class="joker-container" id="jokerContainer">
+                <img src="src/joker.jpg" alt="Joker" class="joker-img" id="jokerImg">
+                <div class="joker-glow"></div>
+            </div>
+            <button class="btn btn-chaos" id="btn1" onclick="goToPage(2)">
+                <span class="btn-text">sigan viendo</span>
+                <span class="btn-glitch"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="page page-2" id="page2">
+        <div class="page-bg"></div>
+        <div class="floating-particles" id="particles2"></div>
+        <div class="content-wrapper">
+            <h1 class="title-decade" id="titleDecade">
+                <span class="title-line">De los <em>12</em> a los <em>22</em>:</span>
+                <span class="title-line accent">Una década contigo.</span>
+            </h1>
+            <div class="text-card" id="textCard2">
+                <p class="body-text">
+                    Diez años se dicen fácil, <span class="highlight">Allyson</span>, pero crecer juntos desde el colegio ha sido la mejor aventura. Gracias por ser la única persona con la que puedo hablar de cualquier <span class="italic">pendejada</span> sin sentirme juzgado. Eres mi lugar seguro.
+                </p>
+            </div>
+            <button class="btn btn-warm" id="btn2" onclick="goToPage(3)">
+                <span class="btn-icon">📸</span>
+                sigan viendo
+            </button>
+        </div>
+    </section>
+
+    <section class="page page-3" id="page3">
+        <div class="page-bg"></div>
+        <div class="content-wrapper">
+            <h1 class="title-moments" id="titleMoments">
+                Aquí se supone que van fotos pero se dañó mi teléfono y no tengo nada xd
+            </h1>
+            <div class="photo-grid" id="photoGrid">
+                <div class="photo-slot" id="slot1">
+                    <img src="src/1.jpeg" alt="Recuerdo 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                </div>
+                <div class="photo-slot" id="slot2">
+                    <img src="src/2.jpg" alt="Recuerdo 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                </div>
+                <div class="photo-slot" id="slot3">
+                    <img src="src/3.webp" alt="Recuerdo 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                </div>
+                <div class="photo-slot" id="slot4">
+                    <img src="src/4.jpg" alt="Recuerdo 4" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                </div>
+                <div class="photo-slot photo-slot-wide" id="slot5">
+                    <img src="src/5.jpg" alt="Recuerdo 5" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                </div>
+                <div class="photo-slot photo-slot-wide" id="slot6">
+                    <img src="src/6.jpg" alt="Recuerdo 6" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                </div>
+            </div>
+            <div class="text-card text-card-moments" id="textCard3">
+                <p class="body-text">
+                    Pero bueno la cuestión es que no importa el plan, lo que importa es que es <span class="highlight">contigo</span>. Gracias por estar en las buenas, en las malas y en las peores. Adjuntaré la última foto que le saqué a mi teléfon para que me creas jaja
+                    
+                </p>
+            </div>
+            <button class="btn btn-golden" id="btn3" onclick="goToPage(4)">
+                <span class="btn-icon"></span>
+                sigan viendo
+            </button>
+        </div>
+    </section>
+
+    <section class="page page-4" id="page4">
+        <div class="page-bg"></div>
+        <div class="floating-particles" id="particles4"></div>
+        <div class="content-wrapper">
+            <h1 class="title-gratitude" id="titleGratitude">
+                Tu corazón es de oro, <span class="name-glow">Allyson</span>.
+            </h1>
+            <div class="text-card text-card-gratitude" id="textCard4">
+                <p class="body-text">
+                    Sé que he cometido errores feos, incluso el haberte alejado cuando no estaba bien. Me perdonaste cosas que yo mismo creía imperdonables y eso no tiene precio.
+                </p>
+                <p class="body-text">
+                    Gracias por ser mi <span class="highlight">hermana de vida</span> y por la confianza que nuestras familias se tienen. <span class="highlight">Eres luz.</span>
+                </p>
+            </div>
+            <button class="btn btn-ethereal" id="btn4" onclick="goToPage(5)">
+                <span class="btn-icon">✨</span>
+                Mi deseo para ti es este...
+            </button>
+        </div>
+    </section>
+
+    <section class="page page-5" id="page5">
+        <div class="page-bg"></div>
+        <canvas id="confettiCanvas"></canvas>
+        <div class="content-wrapper">
+            <h1 class="title-birthday" id="titleBirthday">
+                <span class="birthday-line">¡FELIZ</span>
+                <span class="birthday-line big">CUMPLEAÑOS!</span>
+            </h1>
+            <div class="text-card text-card-final" id="textCard5">
+                <p class="body-text">
+                    Hoy solo quiero recordarte que <span class="highlight-strong">MERECES TODO LO BUENO QUE EXISTE EN ESTE MUNDO</span>. Sé que serás una médica increíble porque tu esencia es ayudar.
+                </p>
+                <p class="body-text">
+                    Para que nunca olvides lo especial que eres, te hice algo único. Un <span class="highlight">Bolero</span> escrito exclusivamente para ti. No se si es tu género favorito, pero a mi me gusta entonces te aguantas xd.
+                </p>
+            </div>
+            <a href="https://youtu.be/uwffJmFjunw" class="btn btn-song" id="btnSong" target="_blank" rel="noopener noreferrer">
+                <span class="music-notes">🎶</span>
+                ESCUCHA TU CANCIÓN AQUÍ
+                <span class="music-notes">🎶</span>
+            </a>
+            <p class="footer-love">Hecho con todo el cariño del mundo 💜</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
