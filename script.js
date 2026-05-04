@@ -6,7 +6,7 @@
 // ---- PAGE NAVIGATION ----
 
 let currentPage = 1;
-const totalPages = 5;
+const totalPages = 8;
 
 function goToPage(pageNum) {
     if (pageNum < 1 || pageNum > totalPages || pageNum === currentPage) return;
@@ -25,7 +25,7 @@ function goToPage(pageNum) {
         currentPage = pageNum;
 
         // Trigger page-specific effects
-        if (pageNum === 5) {
+        if (pageNum === 8) {
             startConfetti();
         }
     }, 400);
@@ -63,7 +63,7 @@ function createParticles(containerId, count, color) {
 
 // Initialize particles
 createParticles('particles2', 25, 'rgba(240, 194, 127, 0.25)');
-createParticles('particles4', 25, 'rgba(177, 74, 237, 0.2)');
+createParticles('particles7', 25, 'rgba(177, 74, 237, 0.2)');
 
 // ---- PHOTO UPLOAD ----
 
